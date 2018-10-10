@@ -1,0 +1,12 @@
+#make file for Project 6 by: Joey Cunningham
+
+project6.out: Space.o Othello.o game.o main.o
+	g++ -o project6.out Space.o Othello.o game.o main.o
+Space.o: Space.h Space.cc
+	g++ -c Space.cc
+Othello.o: Othello.h Othello.cc
+	g++ -c Othello.cc
+game.o: game.h game.cc
+	g++ -c game.cc
+main.o: main.cc
+	g++ -c main.cc
